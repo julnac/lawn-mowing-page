@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawnMowing</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div></div>
+    </nav>
+    <main>
+        <div class="section section_1 scroll" data-rate="0">
+            <div class="giph">
+                <video playsinline loop muted autoplay>
+                    <source src="lawn-movie.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="hero-info">
+                <h1>Eksperci w pielęgnacji zieleni</h1>
+                <h2>Precyzyjne koszenie trawników</h2>
+                <button>
+                    <svg viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9.5L1.78814e-06 18.1603L1.78814e-06 0.839745L15 9.5Z"/>
+                    </svg>
+                    Kontakt
+                </button>
+            </div>
+        </div>
+        <div class="parallax-image scroll" data-rate="0.35">
+            <img src="kosiara.jpg" alt="kosiara"/>
+        </div>
+        <div class="section section_2" >
+            <div class="title">
+                <h3>Twoje warunki usługi</h3>
+            </div>
+            <div class="formula">
+                <form action="*">
+                    <label>Imię</label> <input type="text" name="imię" maxlength"20" />
+                    <label>Nazwisko</label> <input type="text" name="nazwisko" maxlength"20" />
+                    <label>mail</label> <input type="text" name="mail" maxlength"20" />
+                    <label>adres</label> <input type="text" name="adres" maxlength"20" />
+                    <label>telefon</label> <input type="phone" name="adres" maxlength"20" />
+                    <label>Przybliżona wielkosć trawnika:</label> 
+                    <div class="flex">
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">10m2</label>
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">10m2</label>
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">10m2</label>
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">10m2</label>
+                        </div>
+                    </div>
+                    <label>Przybliżona wysokość trawnika:</label> 
+                    <div class="flex">
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">5 cm</label>
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">15 cm</label>
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">30 cm</label>
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="radio" value="wartość" />
+                            <label for="huey">50 cm</label>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <label>Obecność psa na posesji:</label> 
+                        <input type="checkbox" name="checkbox" value="wartość" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
