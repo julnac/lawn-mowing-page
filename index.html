@@ -10,17 +10,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <div class="logo">Logo</div>
+        <div class="logo">Marcin Pozorski</div>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Usługi</a></li>
+            <li><a href="#">Cennik</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Rezerwacja</a></li>
         </ul>
-        <div></div>
     </nav>
     <main>
         <div class="section section_1 scroll" data-rate="0">
@@ -37,7 +40,7 @@
                     <svg viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 9.5L1.78814e-06 18.1603L1.78814e-06 0.839745L15 9.5Z"/>
                     </svg>
-                    Kontakt
+                    Rezerwacja
                 </button>
             </div>
         </div>
@@ -45,60 +48,96 @@
             <img src="kosiara.jpg" alt="kosiara"/>
         </div>
         <div class="section section_2" >
-            <div class="title">
-                <h3>Twoje warunki usługi</h3>
+            <div class="rezerwacja">
+                <div class="image">
+                    <img src="kosiarz.jpg" alt="kosiarz"/>
+                </div>
+                <div class="right">
+                    <div class="title">
+                        <h3>Zarezerwuj koszenie</h3>
+                    </div>
+                    <div class="formula">
+                        <form action="*">
+                            <div>
+                                <label>Imię</label> <input type="text" name="imię" maxlength"20" />
+                            </div>
+                            <div>
+                                <label>Nazwisko</label> <input type="text" name="nazwisko" maxlength"20" />
+                            </div>
+                            <div>
+                                <label>Mail</label> <input type="email" name="mail" maxlength"20" />
+                            </div>
+                            <div>
+                                <label>Adres</label> <input type="text" name="adres" maxlength"20" />
+                            </div>
+                            <div>
+                                <label>Telefon*</label> <input type="tel" name="phone" maxlength"20" />
+                            </div>
+                            <div>
+                                <label>Data</label> <input type="date" name="data" maxlength"20" />
+                            </div>
+                            <div class="slider">
+                                <label>Przybliżona wielkość trawnika [m&sup2;]</label> 
+                                <div class="range-slider">
+                                    <input class="range-slider__range" type="range" value="0" min="0" max="1000" step="50">
+                                    <span class="range-slider__value">0</span>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <label>Przybliżona wysokość trawnika [cm]</label> 
+                                <div class="range-slider">
+                                    <input class="range-slider__range" type="range" value="0" min="0" max="50" step="5">
+                                    <span class="range-slider__value">0</span>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <label>Obecność psa</label> 
+                                <input type="checkbox" name="checkbox" value="wartość" />
+                            </div>
+                            <div class="slider">
+                                <label>Dodatkowa wiadomość*</label> <input type="text" name="wiadomość" maxlength"20" />
+                            </div>
+                            <input class="submit-button" type="submit" value="Wyślij">
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="formula">
-                <form action="*">
-                    <label>Imię</label> <input type="text" name="imię" maxlength"20" />
-                    <label>Nazwisko</label> <input type="text" name="nazwisko" maxlength"20" />
-                    <label>mail</label> <input type="text" name="mail" maxlength"20" />
-                    <label>adres</label> <input type="text" name="adres" maxlength"20" />
-                    <label>telefon</label> <input type="phone" name="adres" maxlength"20" />
-                    <label>Przybliżona wielkosć trawnika:</label> 
-                    <div class="flex">
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">10m2</label>
-                        </div>
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">10m2</label>
-                        </div>
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">10m2</label>
-                        </div>
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">10m2</label>
+        </div>
+        <div class="section_3" >
+            <div class="content">
+                <div class="naglowek">
+                    <h4>Usługi</h4>
+                </div>
+                <div class="galeria">
+                    <div class="box">
+                        <img src="kosiarz.jpg" alt="kosa"/>
+                        <div class="opis">
+                            <p>Opis</p>
                         </div>
                     </div>
-                    <label>Przybliżona wysokość trawnika:</label> 
-                    <div class="flex">
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">5 cm</label>
-                        </div>
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">15 cm</label>
-                        </div>
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">30 cm</label>
-                        </div>
-                        <div class="flex">
-                            <input type="radio" name="radio" value="wartość" />
-                            <label for="huey">50 cm</label>
+                    <div class="box">
+                        <img src="kosiarz.jpg" alt="kosa"/>
+                        <div class="opis">
+                            <p>Opis</p>
                         </div>
                     </div>
-                    <div class="flex">
-                        <label>Obecność psa na posesji:</label> 
-                        <input type="checkbox" name="checkbox" value="wartość" />
+                    <div class="box">
+                        <img src="kosiarz.jpg" alt="kosa"/>
+                        <div class="opis">
+                            <p>Opis</p>
+                        </div>
                     </div>
-                </form>
+                    <div class="box">
+                        <img src="kosiarz.jpg" alt="kosa"/>
+                        <div class="opis">
+                            <p>Opis</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="section section_4">
+
         </div>
     </main>
 </body>
