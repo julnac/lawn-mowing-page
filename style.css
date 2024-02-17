@@ -322,7 +322,6 @@ main .section_3 {
   align-items: center;
 }
 main .section_3 .content .naglowek {
-  grid-column: 3/11;
   padding: 0 0 0 40px;
 }
 main .section_3 .content .galeria {
@@ -331,27 +330,22 @@ main .section_3 .content .galeria {
   align-items: flex-start;
   flex: none;
   gap: 40px;
-  height: -moz-min-content;
-  height: min-content;
   justify-content: flex-start;
   padding: 0 0 0 40px;
-  position: relative;
-  width: -moz-min-content;
-  width: min-content;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 main .section_3 .content .galeria .box {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 24px;
-  height: -moz-min-content;
-  height: min-content;
   justify-content: flex-start;
   overflow: hidden;
   padding: 0;
   position: relative;
   border-radius: 0.5rem;
-  width: 550px;
+  width: 500px;
 }
 main .section_3 .content .galeria .box img {
   aspect-ratio: 1.2334801762/1;

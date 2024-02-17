@@ -319,7 +319,6 @@ main{
         align-items: center;
         .content{
             .naglowek{
-                grid-column: 3/11;
                 padding: 0 0 0 40px;
                 
             }
@@ -329,23 +328,23 @@ main{
                 align-items: flex-start;
                 flex: none;
                 gap: 40px;
-                height: min-content;
                 justify-content: flex-start;
                 padding: 0 0 0 40px;
-                position: relative;
-                width: min-content;
+                // position: relative;
+                // width: 100%;
+                overflow-x: auto;
+                overscroll-behavior-inline: contain;
                 .box{
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
                     gap: 24px;
-                    height: min-content;
                     justify-content: flex-start;
                     overflow: hidden;
                     padding: 0;
                     position: relative;
                     border-radius: .5rem;
-                    width: 550px;
+                    width: 500px;
                     img{
                         aspect-ratio: 1.2334801762114538 / 1;
                         width: 100%;
