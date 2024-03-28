@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav .logo {
+  font-weight: var(--font-normal);
+}
+nav ul {
+  display: inherit;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 0 1rem;
+  font-weight: var(--font-normal);
+  line-height: 1.4;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  nav button {
+    display: none;
+  }
+}/*# sourceMappingURL=nav.css.map */

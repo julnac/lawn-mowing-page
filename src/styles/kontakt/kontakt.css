@@ -1,0 +1,49 @@
+.kontakt {
+  background-color: var(--body-color-dark);
+  gap: 2rem;
+  padding-top: 13rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.kontakt .kontakt__content {
+  grid-column: 2/12;
+}
+.kontakt .kontakt__content h1 {
+  color: rgba(255, 255, 255, 0.541);
+  font-size: 2rem;
+}
+.kontakt .kontakt__content h3 {
+  padding: 1rem 0;
+  font-size: 7rem;
+}
+.kontakt .kontakt__content p a {
+  color: var(--text-color-light);
+  font-size: 2rem;
+}
+.kontakt .kreska {
+  grid-column: 2/12;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.342);
+}
+.kontakt footer {
+  display: flex;
+  gap: 2rem;
+  grid-column: 2/12;
+}
+.kontakt footer p {
+  color: var(--text-color-light);
+}
+
+@media screen and (max-width: 576px) {
+  .kontakt > .kontakt__content h3 {
+    font-size: 3rem;
+  }
+  .kontakt > .kontakt__content h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .kontakt > .kontakt__content p a {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=kontakt.css.map */

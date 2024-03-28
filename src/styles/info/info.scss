@@ -1,0 +1,48 @@
+.info-black-background{
+    background-color: var(--body-color-dark);
+    border-radius:  0;
+    position: relative;
+}
+.info{
+    gap: 1rem;
+    height: 100vh;
+    background-color: var(--body-color-light);
+    border-radius: 1rem;
+    align-items: start;
+    position: relative;
+    .info__naglowek{
+        padding-top: 50px;
+        grid-column: 2/12;
+        h3{
+            color: var(--text-color-dark);
+            line-height: 100%;
+            margin: 0;
+        }
+    }
+    .kreska{
+        grid-column: 2/12;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+    .tytul{
+        grid-column: 2/7;
+    }
+    .tresc{
+        grid-column: 7/12;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    
+    .info{
+        height: auto;
+        gap: 2rem 1rem;
+        .info__naglowek{
+            padding: 0;
+        }
+    }
+}
