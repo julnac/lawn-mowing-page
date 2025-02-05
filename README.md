@@ -1,6 +1,6 @@
 # Homepage of a lawn mowing company
 
-Author: Julia Naczke
+Author: Julia Pozorska
 Date: February 2024
 
 
